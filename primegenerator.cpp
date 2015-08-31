@@ -1,5 +1,4 @@
 #include <iostream>
-#include <conio.h>
 #include <vector>
 using namespace std;
 
@@ -56,6 +55,8 @@ int Optimus(int BC1, int BC2)
 	//Print the numbers
 	for(int i=0;i<sp.size();i++)
 		cout<<"\t"<<sp[i];
+
+	return 1;
 }
 
 int main()
@@ -67,7 +68,6 @@ int main()
 	if(numtest < 1 || numtest>10)
 	{
 		cout<<"\n Invalid input. Min or Max number of test cases can be 1 or 10. Exiting...";
-		getch();
 		return 0;
 	}
 	//Loop to get user inputs for boundaries
@@ -90,12 +90,10 @@ int main()
 
 	//Preprocess Prime generator Algorithm data
 	bcArrSize = bcArray.size();
-	for(int i=0;i<bcArrSize;i++)
+	for(int i=1;i<=bcArrSize;i++)
 	{
 		if(i%2!=0)
-			Optimus(bcArray[i],bcArray[i+1]);
+			Optimus(bcArray[i-1],bcArray[i]);
 	}
-	getch();
 	return 0;
 }
-
