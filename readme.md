@@ -8,3 +8,4 @@
 
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+1. Prime generator problem : Find a list of prime numbers between the bounds of 2 given numbers for given number of test cases.
